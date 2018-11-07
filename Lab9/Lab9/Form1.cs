@@ -21,7 +21,7 @@ namespace Lab9
         {
             Graphics g = e.Graphics;
             Pen mypen = new Pen(Color.Black, 1);
-            g.DrawRectangle(mypen,10,10,100,100);
+            g.DrawRectangle(mypen,10,10,200,200);
             mypen.Width = 4;
             mypen.Color = Color.Pink;
             g.DrawEllipse(mypen, 10, 10, 200, 200);
