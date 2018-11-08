@@ -20,12 +20,17 @@ namespace Lab9
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            Pen pen = new Pen(Color.Green, 2);
-            Point[] pt = { new Point(20, 200), new Point(50, 20), new Point(100, 100), new Point(150, 230), new Point(200, 200) };
-            g.DrawCurve(pen, pt);
+            Pen myPen = new Pen(Color.Blue, 3);
+            Rectangle[] rects = {
+                new Rectangle(20,20,120,20),
+            new Rectangle(20, 50, 120, 30),
+            new Rectangle(20, 90, 120, 40),
+            new Rectangle(20, 140, 120, 60)
+        };
+            g.DrawRectangles(myPen, rects);
             g.Dispose();
 
-       
+
         }
     }
 }
